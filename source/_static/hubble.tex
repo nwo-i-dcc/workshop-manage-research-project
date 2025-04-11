@@ -1,0 +1,81 @@
+\documentclass[10pt,twocolumn]{article}
+
+\usepackage{graphicx}
+\usepackage{natbib}
+
+\title{Confirming the Hubble-Lema\^itre universe expansion law}
+\author{The Data Stewards}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+Almost a century ago, \citet{Hubble1929} published a proceedings
+paper suggesting that the Universe is not static, but expanding.
+Using a sample of 24 nearby galaxies, for which distance and 
+velocity measurements were available, he showed that the velocity
+of a galaxy is linearly related to the distance. In other words,
+the larger the distance to a galaxy is, the faster is its velocity
+away from us. These measurements lead to the famous Hubble-Lema\^itre 
+universe expansion law, which changed our view of the universe.
+
+The Hubble-Lema\^itre expansion law states that the velocity ($v$)
+of a galaxy is linearly related to the distance between us and the
+galaxy ($D$):
+\begin{equation}
+v = H_0 D
+\end{equation}
+The Hubble constant ($H_0$) describes the expansion rate of the 
+universe in units of km/s/Mpc.
+
+\section{Data analysis}
+
+To celebrate this amazing discovery, we repeat Hubble's experiment
+using modern distance and velocity data for the galaxies Hubble 
+selected. We obtain these data from the SIMBAD\footnote{http://simbad.cds.unistra.fr/simbad/}
+astronomical database using the Astroquery\footnote{https://astroquery.readthedocs.io/en/latest/simbad/simbad.html}
+Python package. The list of objects, their distances and velocities 
+are listed in Table~\ref{tab:galaxies}. 
+
+\begin{table}
+\caption{The modern velocity and distance data for the Hubble 
+sample of galaxies.}
+\label{tab:galaxies}
+% Include a table with the object names, distances and velocities from SIMBAD.
+% See how you write an astropy table to a latex table here:
+% https://docs.astropy.org/en/stable/table/io.html
+\end{table}
+
+\section{Results}
+
+We fit the velocities with a linear function using the \verb+numpy.linalg.lstsq+
+method. The result is shown in Figure~\ref{fig:hubblefit}. We find that the 
+Hubble constant is \textit{XXX} km/s/Mpc. Using this number, we can estimate that the 
+universe is \textit{XXX} billion years old.
+
+\begin{figure}
+
+\caption{Plot of the velocities of the galaxies versus their distance. The
+red line indicates the linear fit with the Hubble equation.}
+\label{fig:hubblefit}
+\end{figure}
+
+
+\section{Conclusion}
+
+% Write a couple of sentences about your result. Is the Hubble constant that
+% you find consistent with what modern dedicated observatories, like Planck, find? 
+
+
+\section{Data availability}
+
+% Write this section when you reach the reproduction package stage of the workshop.
+
+
+\bibliographystyle{dinat} 
+\bibliography{hubble} % references are located in hubble.bib
+
+
+\end{document}

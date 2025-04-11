@@ -49,7 +49,9 @@ exclude_patterns = []
 #
 html_theme = 'sphinx_book_theme'
 html_theme_options = {
-   "logo": {
+    "repository_url": "https://github.com/nwo-i-dcc/workshop-manage-research-project",
+    "use_repository_button": True,
+    "logo": {
       "image_light": "_static/nwo-i.png",
       "image_dark": "_static/nwo-i.png",
    }

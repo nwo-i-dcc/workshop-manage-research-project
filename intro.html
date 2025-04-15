@@ -1,0 +1,614 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Introduction &#8212; Manage your research project  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Project directory" href="directories.html" />
+    <link rel="prev" title="Manage your research project" href="index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/nwo-i.png" class="logo__image only-light" alt="Manage your research project  documentation - Home"/>
+    <script>document.write(`<img src="_static/nwo-i.png" class="logo__image only-dark" alt="Manage your research project  documentation - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="directories.html">Project directory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="structure.html">Project directory structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="git.html">Git version control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="analysis.html">Data analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="paper.html">Paper preparation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="repro.html">Reproduction package</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/nwo-i-dcc/workshop-manage-research-project" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/intro.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Introduction</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-will-we-do-during-the-workshop">What will we do during the workshop?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sections-and-timing">Sections and timing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-do-you-need-before-you-start">What do you need before you start?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#computer-laptop-with-python">Computer/laptop with Python</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#latex-optional">LaTeX (optional)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter-optional">Jupyter (optional)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#git-optional">Git (optional)</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#useful-accounts">Useful accounts</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#orcid-optional">ORCID (Optional)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#zenodo-sandbox-account">Zenodo sandbox account</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Overleaf</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="introduction">
+<span id="sec-intro"></span><h1>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h1>
+<section id="motivation">
+<h2>Motivation<a class="headerlink" href="#motivation" title="Link to this heading">#</a></h2>
+<p>When you start up a research project, you do not always think a lot about how to organise it on your computer.
+Especially when it is your first time, you start with an empty project directory somewhere. During the course
+of the project, this directory grows organically. While you are exploring side steps, you also tend to create
+(temporary) directories elsewhere as well. Sometimes these sidesteps turn out to be useful, but often they turn
+out to be failed experiments.</p>
+<p>As the project moves along, you may feel several times that the structure that you chose in the beginning
+was not so practical after all. It becomes harder to keep an overview of everything you have done, and what
+part of it is useful. By the time you are writing the paper, finding back which versions of your result files
+and scripts produce the right results can be a challenge. This will also make it time consuming to create a
+reproduction package.</p>
+<p>If you recognise yourself in the text above, do not worry. You are not alone! This happens to everybody.</p>
+<p>This workshop is intended to help you structure your research project, and teach you tools and tricks
+that can help you to keep an overview of what you have done.</p>
+<p>How you work and how you like to organise things is very personal. Just think about how differently people
+organise the stuff in their kitchen. There is no right or wrong here. This workshop is all about offering
+you tools and methods that can help you find the organisational structure that works for you.</p>
+</section>
+<section id="what-will-we-do-during-the-workshop">
+<h2>What will we do during the workshop?<a class="headerlink" href="#what-will-we-do-during-the-workshop" title="Link to this heading">#</a></h2>
+<p>We will repeat the analysis of Edwin Hubble when he discovered the expansion of the universe in 1929.
+For this project, we will create a new project directory structured following
+a cookiecutter template and go through the process of a research project, from collecting the data
+to publishing a reproduction package. The focus is not so much on programming, but more on learning
+tips and tricks to organise your project in a practical way.</p>
+</section>
+<section id="sections-and-timing">
+<h2>Sections and timing<a class="headerlink" href="#sections-and-timing" title="Link to this heading">#</a></h2>
+<p>Based on practical experience, we estimate the following times needed to teach each section:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Section</p></th>
+<th class="head"><p>Time (min)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Introduction</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-odd"><td><p>Project directory</p></td>
+<td><p>15</p></td>
+</tr>
+<tr class="row-even"><td><p>Directory structure</p></td>
+<td><p>70</p></td>
+</tr>
+<tr class="row-odd"><td><p>Git version control*</p></td>
+<td><p>10</p></td>
+</tr>
+<tr class="row-even"><td><p>Data analysis</p></td>
+<td><p>60</p></td>
+</tr>
+<tr class="row-odd"><td><p>Producing a paper*</p></td>
+<td><p>TBD</p></td>
+</tr>
+<tr class="row-even"><td><p>Reproduction package</p></td>
+<td><p>30</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Total</strong></p></td>
+<td><p><strong>190</strong> (3:10)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>* These sections can be skipped/shortend to save time</p>
+</section>
+<section id="what-do-you-need-before-you-start">
+<h2>What do you need before you start?<a class="headerlink" href="#what-do-you-need-before-you-start" title="Link to this heading">#</a></h2>
+<section id="computer-laptop-with-python">
+<h3>Computer/laptop with Python<a class="headerlink" href="#computer-laptop-with-python" title="Link to this heading">#</a></h3>
+<p>You will need a laptop with Python installed, including a couple of Python packages:</p>
+<ul class="simple">
+<li><p>astropy</p></li>
+<li><p>astroquery</p></li>
+<li><p>build</p></li>
+<li><p>matplotlib</p></li>
+<li><p>cookiecutter</p></li>
+</ul>
+<p>You can either use the native Python installation of your operating system and install these packages
+with <code class="docutils literal notranslate"><span class="pre">pip</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">astropy</span> <span class="n">astroquery</span> <span class="n">build</span> <span class="n">matplotlib</span> <span class="n">cookiecutter</span>
+</pre></div>
+</div>
+<p>or install these packages in anaconda:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">install</span> <span class="n">astropy</span> <span class="n">astroquery</span> <span class="n">build</span> <span class="n">matplotlib</span> <span class="n">cookiecutter</span>
+</pre></div>
+</div>
+<section id="latex-optional">
+<h4>LaTeX (optional)<a class="headerlink" href="#latex-optional" title="Link to this heading">#</a></h4>
+<p>A LaTeX installation would be very helpful. On Linux systems you can install LaTeX through the package manager
+of the distribution. On Mac, you can either install <a class="reference external" href="https://www.tug.org/mactex/mactex-download.html">MacTeX</a>
+or install latex through homebrew or macports.</p>
+<p>If you do not want to install LaTeX, you can alternatively create an account on <a class="reference external" href="https://www.overleaf.com/">Overleaf</a>
+and/or log in to Overleaf using ORCID (see below in the section ‘Useful accounts’).</p>
+</section>
+<section id="jupyter-optional">
+<h4>Jupyter (optional)<a class="headerlink" href="#jupyter-optional" title="Link to this heading">#</a></h4>
+<p>The exercises in this workshop can be done without jupyter. Only a terminal window is necessary. However, if
+you like programming in a jupyter notebook, then you can use it.</p>
+</section>
+<section id="git-optional">
+<h4>Git (optional)<a class="headerlink" href="#git-optional" title="Link to this heading">#</a></h4>
+<p>We will briefly touch upon using version control for your software and paper. The most
+popular version control system is git. This program is usually installed by default
+on Mac and Linux, but on <a class="reference external" href="https://gitforwindows.org/">Windows it needs to be installed</a>.</p>
+</section>
+</section>
+<section id="useful-accounts">
+<h3>Useful accounts<a class="headerlink" href="#useful-accounts" title="Link to this heading">#</a></h3>
+<p>The workshop recommends a couple of web services. If you are planning to publish a paper or any other relevant materials,
+having an ORCID would be great, but not strictly necessary. Using ORCID you can also log into Zenodo and Overleaf.</p>
+<section id="orcid-optional">
+<h4>ORCID (Optional)<a class="headerlink" href="#orcid-optional" title="Link to this heading">#</a></h4>
+<p><a class="reference external" href="https://orcid.org/">ORCID</a> originated as a method to identify individual scientists with a numeric identifier,
+to avoid confusion with names. Once you have an account, you can add information about your publications and career,
+like a CV. This information is (partially) public. In addition, an ORCID account provides access to a lot of
+other scientific web services.</p>
+<p>Please only create an account there if you are or intend to be a publishing scientist not
+to pollute the ORCID database with unused accounts.</p>
+<p>ORCID is especially helpful if you want to log in to Overleaf or the real Zenodo.</p>
+</section>
+<section id="zenodo-sandbox-account">
+<h4>Zenodo sandbox account<a class="headerlink" href="#zenodo-sandbox-account" title="Link to this heading">#</a></h4>
+<p>The <a class="reference external" href="https://sandbox.zenodo.org/">Zenodo Sandbox</a> is a copy of the official Zenodo website that can be used for
+testing. It is best not to connect your ORCID to this one and create a seperate account. This account will also be
+deleted after a while, just like all the uploads. Create this account just before the workshop starts.</p>
+</section>
+<section id="id1">
+<h4>Overleaf<a class="headerlink" href="#id1" title="Link to this heading">#</a></h4>
+<p><a class="reference external" href="https://www.overleaf.com/">Overleaf</a> is an online LaTeX editor to prepare papers and collaboratively work with
+other scientists. With this webservice, it is not necessary to install LaTeX on your local machine. You can get a
+limited free account, which can be linked to your ORCID. Git access requires a paper created by a paid account.</p>
+</section>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Manage your research project</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="directories.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Project directory</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-will-we-do-during-the-workshop">What will we do during the workshop?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sections-and-timing">Sections and timing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-do-you-need-before-you-start">What do you need before you start?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#computer-laptop-with-python">Computer/laptop with Python</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#latex-optional">LaTeX (optional)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter-optional">Jupyter (optional)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#git-optional">Git (optional)</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#useful-accounts">Useful accounts</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#orcid-optional">ORCID (Optional)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#zenodo-sandbox-account">Zenodo sandbox account</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Overleaf</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Jelle de Plaa
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025, CC-BY License, NWO-I, The Netherlands.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

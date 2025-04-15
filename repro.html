@@ -1,0 +1,604 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Reproduction package &#8212; Manage your research project  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'repro';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Paper preparation" href="paper.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/nwo-i.png" class="logo__image only-light" alt="Manage your research project  documentation - Home"/>
+    <script>document.write(`<img src="_static/nwo-i.png" class="logo__image only-dark" alt="Manage your research project  documentation - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="directories.html">Project directory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="structure.html">Project directory structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="git.html">Git version control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="analysis.html">Data analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="paper.html">Paper preparation</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Reproduction package</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/nwo-i-dcc/workshop-manage-research-project" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/repro.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Reproduction package</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fair-principles">FAIR principles</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-the-package">Creating the package</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#upload-to-zenodo">Upload to Zenodo</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#upload-the-files">Upload the files</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-information">Basic information</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#other-information">Other information</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-options">Additional options</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-data-availability-section">The data availability section</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#congratulations">Congratulations!</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="reproduction-package">
+<span id="sec-repro"></span><h1>Reproduction package<a class="headerlink" href="#reproduction-package" title="Link to this heading">#</a></h1>
+<p>Now that we have fitted the data and wrote down the results and conclusions
+in the paper, we can start creating a reproduction package to help others
+check our results or benefit from the work that we have done.</p>
+<p>A reproduction package is a collection of relevant data files, scripts
+and documentation that accompanies a scientific paper. This package should
+be published in a trusted repository, like Zenodo.org.</p>
+<p>In this workshop, we will use the <a class="reference external" href="https://sandbox.zenodo.org/">Zenodo sandbox</a>
+where we can do uploads without contaminating the repository. The Zenodo
+sandbox works exactly the same as the real Zenodo, but the uploads are regularly
+deleted.</p>
+<p>A template for a reproduction package (including a checklist) can be found
+<a class="reference external" href="https://github.com/jdeplaa/open-data-template">on Github</a>. It is not compulsory
+to use this. The important thing is that the package contains well documented
+and useful data.</p>
+<section id="fair-principles">
+<h2>FAIR principles<a class="headerlink" href="#fair-principles" title="Link to this heading">#</a></h2>
+<p>When creating and publishing data, it is good to think about the FAIR data
+principles. FAIR stands for:</p>
+<ul class="simple">
+<li><p>Findable</p></li>
+<li><p>Accessible</p></li>
+<li><p>Interoperable</p></li>
+<li><p>Reusable</p></li>
+</ul>
+<p>The first two, findable and accessible, mean that you need to put the data in
+a place where people can find and access it. This is why we pick a public
+repository like Zenodo.</p>
+<p>The last two mean that we should use programming languages and data formats that
+are easy to run for others. Python is an open source language and it is not
+necessary, for example, to buy a license. The FITS format is an open format
+that is well described by NASA and has good library support. This makes sure that
+other people can reuse the data.</p>
+</section>
+<section id="creating-the-package">
+<h2>Creating the package<a class="headerlink" href="#creating-the-package" title="Link to this heading">#</a></h2>
+<p>To reproduce our Hubble result, other people would need our data and scripts.
+We have the following list:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">data/hubble_data.fits</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">src/hubble</span></code>, including hubblequery.py, hubblefit.py, etc.</p></li>
+</ul>
+<p>In the <a class="reference internal" href="structure.html#sec-structure"><span class="std std-ref">Project directory structure</span></a>, we have already created a new README.md file in the
+top level directory of our project. It should already contain some information
+about how to run the scripts.</p>
+<div class="admonition-exercise admonition">
+<p class="admonition-title">EXERCISE</p>
+<p>Fill out the remaining relevant sections of the README.md file.
+The most important items are the software dependencies, a description of the
+scripts and how to run them, and a short description of the data. Do not forget
+that people need to set the PROJECT_DIR and PROJECT_DATA_DIR variables.</p>
+</div>
+<p>When the README.md file is updated, put the data file and scripts in a tar.gz file.
+This is a really small project, and we will make only one file. If your project
+is larger, you can also decide to create separate packages for the data, scripts,
+and figures.</p>
+<p>Next, we create the tar.gz file and it is important to leave out the README.md:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">user</span><span class="nd">@terminal</span><span class="p">:</span><span class="o">~/</span><span class="n">Projects</span><span class="o">/</span><span class="n">hubble</span><span class="o">&gt;</span> <span class="n">tar</span> <span class="n">cvfz</span> <span class="n">hubble</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span> <span class="n">data</span><span class="o">/</span><span class="n">hubble_data</span><span class="o">.</span><span class="n">fits</span> <span class="n">src</span><span class="o">/</span><span class="n">hubble</span>
+</pre></div>
+</div>
+</section>
+<section id="upload-to-zenodo">
+<h2>Upload to Zenodo<a class="headerlink" href="#upload-to-zenodo" title="Link to this heading">#</a></h2>
+<p>Go to <a class="reference external" href="https://sandbox.zenodo.org">sandbox.zenodo.org</a> and log in with your
+sandbox account. On the top right of the page you can now click the <cite>+</cite> symbol
+and choose ‘New upload’ from the drop-down menu. This will open a new upload form.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you are doing a real upload, please add the community of your institute
+to the form. The button for this is all the way at the TOP of the form!</p>
+</div>
+<section id="upload-the-files">
+<h3>Upload the files<a class="headerlink" href="#upload-the-files" title="Link to this heading">#</a></h3>
+<p>In the files section, you can upload the <code class="docutils literal notranslate"><span class="pre">hubble.tar.gz</span></code> file and the <code class="docutils literal notranslate"><span class="pre">README.md</span></code>.
+The reason that we upload the README.md separately, is that Zenodo will show the README.md
+file as a preview for the package. This way, people will see the README.md already on screen
+before they download the package.</p>
+</section>
+<section id="basic-information">
+<h3>Basic information<a class="headerlink" href="#basic-information" title="Link to this heading">#</a></h3>
+<p>The basic information section is rather straightforward. In almost all circumstances it
+is the best to reserve a <a class="reference external" href="https://en.wikipedia.org/wiki/Digital_object_identifier">DOI</a>.
+Only if the journal provided you with a specific DOI for
+the dataset (not the paper!), you need to provide that one instead. So, choose ‘No’ and
+click to reserve a DOI.</p>
+<p>Choose the resource type ‘Dataset’ and fill out the title of the paper. If you want,
+you can copy a relevant paragraph from the paper as description.</p>
+<p>The license can remain ‘Creative-Commons Attribution 4.0 International’, it is usually
+a good standard choice. If you have a lot of code, it may be better to apply a <a class="reference external" href="https://choosealicense.com/">software
+license</a> to that part of the package. Also, it is
+important to respect the licenses of other codes if you use external packages. This
+can be complicated in certain cases, so if you are in doubt, please discuss it
+with your data steward.</p>
+</section>
+<section id="other-information">
+<h3>Other information<a class="headerlink" href="#other-information" title="Link to this heading">#</a></h3>
+<p>As you can see there is a lot of other information that you can add. For this workshop,
+most are irrelevant, but once you do this for real it is good to provide as much
+additional data as you can. These metadata can also be added to the upload later, so
+do not worry if something needs to be added later. Only the datafiles cannot be altered
+after the upload is finished. When your data files change, it is possible to upload a
+new version of the publication.</p>
+<p>The more relevant metadata that you can add, the easier it will be for people to find
+your data and reuse it. So, try to be as complete as you can.</p>
+<p>Go back to the top-right of the form where you can ‘save’, and if you are finished ‘publish’
+the package.</p>
+</section>
+<section id="additional-options">
+<h3>Additional options<a class="headerlink" href="#additional-options" title="Link to this heading">#</a></h3>
+<p>By default, your new upload is visible to everyone. However, there could be circumstances
+where you want to release the data later. In those cases, you can either set the upload to
+‘Restricted’ instead of private, or apply an embargo date.</p>
+</section>
+</section>
+<section id="the-data-availability-section">
+<h2>The data availability section<a class="headerlink" href="#the-data-availability-section" title="Link to this heading">#</a></h2>
+<p>Now that we have a Zenodo upload, including DOI, we can go back to our paper and fill out
+the data availability section.</p>
+<p>A good data availability section contains the following information:</p>
+<ul class="simple">
+<li><p>A brief description of the raw data and software used and where they can be found (ESA/NASA archive?).
+Please also include the version number of the software.</p></li>
+<li><p>A brief description of the final data products (images, spectra, lightcurves, etc.), the scripts
+that were used to generate them, and where they can be found. Preferably, these should be in a
+reproduction package that has been uploaded to a repository (Zenodo) and has a DOI.</p></li>
+<li><p>Do not forget to cite the reproduction package (with DOI) in the references section!
+If the DOI is available in the references, then it is machine readable and it will appear,
+for example, also as a publication in ADS.</p></li>
+<li><p>If there are access conditions for your data and scripts, explain why they are there and
+how to get access. This also holds for embargo’s.</p></li>
+<li><p>Mention the license which applies to your reproduction package.</p></li>
+<li><p>If you use separate software packages, describe them briefly and cite them using either
+a DOI, ASCL reference or paper. Citing the Github page is nice, but may not be available
+on the long term. It is anyway good scientific conduct to cite the work of others, also software work.</p></li>
+</ul>
+<p>For our package, we can at least write a sentence that the data is available at Zenodo.
+We can even make a citation! If you go to your upload at Zenodo and scroll down to the
+‘Export’ block on the right side. There you can select ‘BibTeX’ from the drop-down menu
+and download the citation directly in BibTeX format! You can copy the citation to
+the <code class="docutils literal notranslate"><span class="pre">hubble.bib</span></code> file and cite the Zenodo upload in the data availability section.</p>
+</section>
+<section id="congratulations">
+<h2>Congratulations!<a class="headerlink" href="#congratulations" title="Link to this heading">#</a></h2>
+<p>You have gone through a small research project and shared your data and scripts!
+Your real research projects will be significantly larger, but hopefully the
+suggestions in this workshop will help you to keep things organised.</p>
+<p>If you want to learn more about project design and how to work in a
+reproducible way, take a look at <a class="reference external" href="https://book.the-turing-way.org/">The Turing way handbook</a>.</p>
+<p>Good luck with your own research project!!!</p>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="paper.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Paper preparation</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fair-principles">FAIR principles</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-the-package">Creating the package</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#upload-to-zenodo">Upload to Zenodo</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#upload-the-files">Upload the files</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-information">Basic information</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#other-information">Other information</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-options">Additional options</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-data-availability-section">The data availability section</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#congratulations">Congratulations!</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Jelle de Plaa
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025, CC-BY License, NWO-I, The Netherlands.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

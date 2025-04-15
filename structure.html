@@ -1,0 +1,760 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Project directory structure &#8212; Manage your research project  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'structure';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Git version control" href="git.html" />
+    <link rel="prev" title="Project directory" href="directories.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/nwo-i.png" class="logo__image only-light" alt="Manage your research project  documentation - Home"/>
+    <script>document.write(`<img src="_static/nwo-i.png" class="logo__image only-dark" alt="Manage your research project  documentation - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="directories.html">Project directory</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Project directory structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="git.html">Git version control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="analysis.html">Data analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="paper.html">Paper preparation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="repro.html">Reproduction package</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/nwo-i-dcc/workshop-manage-research-project" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/structure.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Project directory structure</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-general-projects-directory">Creating a general projects directory</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-project-directory-using-cookiecutter">Creating a project directory using cookiecutter</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-created-directory-structure">The created directory structure</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data">Data</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#subdirectories">Subdirectories</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#link-to-large-file-storage">Link to large file storage</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-env-sh-file">The env.sh file</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reports">Reports</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#source-directory-src">Source directory (src)</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#docs">Docs</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#notebooks">Notebooks</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pyproject-toml">Pyproject.toml</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#paper">Paper</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#readme">README</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#file-formats">File formats</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#naming-files">Naming files</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="project-directory-structure">
+<span id="sec-structure"></span><h1>Project directory structure<a class="headerlink" href="#project-directory-structure" title="Link to this heading">#</a></h1>
+<section id="creating-a-general-projects-directory">
+<h2>Creating a general projects directory<a class="headerlink" href="#creating-a-general-projects-directory" title="Link to this heading">#</a></h2>
+<p>Now that we know where to create our project directory, it is time to create the directory itself.
+In this tutorial, we assume that you create the project directory in your home directory (<code class="docutils literal notranslate"><span class="pre">/home/&lt;user&gt;</span></code>
+or <code class="docutils literal notranslate"><span class="pre">/Users/&lt;user&gt;</span></code>, where <code class="docutils literal notranslate"><span class="pre">&lt;user&gt;</span></code> is your user name).</p>
+<p>To keep the top of your home directory clean, it is best to create a main directory for all projects.
+This is a bit subjective, but if you do that, it clearly separates your science project files from
+downloads, pictures, etc. We create the directory <code class="docutils literal notranslate"><span class="pre">Projects</span></code> for this purpose, but of course you can
+give it a different name if you like.</p>
+<p>On Linux and Mac, you can create the folder in the terminal like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">user</span><span class="nd">@terminal</span><span class="p">:</span><span class="o">~&gt;</span> <span class="n">mkdir</span> <span class="o">~/</span><span class="n">Projects</span>
+</pre></div>
+</div>
+<p>This will be the place for all your future projects.</p>
+</section>
+<section id="creating-a-project-directory-using-cookiecutter">
+<h2>Creating a project directory using cookiecutter<a class="headerlink" href="#creating-a-project-directory-using-cookiecutter" title="Link to this heading">#</a></h2>
+<p>So, how do we create a directory structure for our next research project? Of course, there are other people
+who have thought of this before. They were even so kind to share their experiences and came up with a good
+structure to start with. There is even a python package that gives you access to a lot of possible project
+templates: <a class="reference external" href="https://cookiecutter.readthedocs.io/en/stable/">Cookiecutter</a>.</p>
+<p>The template that we use in this tutorial is the <a class="reference external" href="https://github.com/nwo-i-dcc/nwo-cookiecutter">NWO Cookiecutter</a>. To use this template, we
+first need to make sure that conda is running and the cookiecutter package is installed.</p>
+<p>To create a new project directory, we first change to our <code class="docutils literal notranslate"><span class="pre">Projects</span></code> directory:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">base</span><span class="p">)</span> <span class="n">user</span><span class="nd">@terminal</span><span class="p">:</span><span class="o">~&gt;</span> <span class="n">cd</span> <span class="n">Projects</span>
+<span class="p">(</span><span class="n">base</span><span class="p">)</span> <span class="n">user</span><span class="nd">@terminal</span><span class="p">:</span><span class="o">~/</span><span class="n">Projects</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>In this directory, we can now create a new project directory. Do you already have a good name for your project?
+A short and unique name helps a lot. You create the new directory using the <code class="docutils literal notranslate"><span class="pre">cookiecutter</span></code> program:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">base</span><span class="p">)</span> <span class="n">user</span><span class="nd">@terminal</span><span class="p">:</span><span class="o">~/</span><span class="n">Projects</span><span class="o">&gt;</span> <span class="n">cookiecutter</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">nwo</span><span class="o">-</span><span class="n">i</span><span class="o">-</span><span class="n">dcc</span><span class="o">/</span><span class="n">nwo</span><span class="o">-</span><span class="n">cookiecutter</span>
+</pre></div>
+</div>
+<p>When you execute the above, you need to answer a couple of questions.
+Give a name to your project. This is going to be the name of the project
+directory, so make sure it is easy enough (one word):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>[1/5] project_name (What is the name of your project?): hubble
+</pre></div>
+</div>
+<p>A Python package directory is automatically created. You can give this package
+a unique name. Do not give it the same or similar name as existing Python packages:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="mi">2</span><span class="o">/</span><span class="mi">5</span><span class="p">]</span> <span class="n">repo_name</span> <span class="p">(</span><span class="n">Give</span> <span class="n">a</span> <span class="n">name</span> <span class="n">to</span> <span class="n">the</span> <span class="n">Python</span> <span class="n">package</span> <span class="n">of</span> <span class="n">your</span> <span class="n">project</span> <span class="p">(</span><span class="n">one</span> <span class="n">word</span><span class="p">)):</span> <span class="n">hubble</span>
+</pre></div>
+</div>
+<p>If you add your name and email address to the project, it will appear in
+the Python package and the README:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="mi">3</span><span class="o">/</span><span class="mi">5</span><span class="p">]</span> <span class="n">author_name</span> <span class="p">(</span><span class="n">Your</span> <span class="n">name</span> <span class="p">(</span><span class="ow">or</span> <span class="n">your</span> <span class="n">organization</span><span class="o">/</span><span class="n">company</span><span class="o">/</span><span class="n">team</span><span class="p">)):</span> <span class="n">Jane</span> <span class="n">Doe</span> <span class="p">(</span><span class="n">NWO</span><span class="p">)</span>
+<span class="p">[</span><span class="mi">4</span><span class="o">/</span><span class="mi">5</span><span class="p">]</span> <span class="n">email</span> <span class="p">(</span><span class="n">Your</span> <span class="n">email</span> <span class="n">address</span><span class="p">):</span> <span class="n">jdoe</span><span class="nd">@nwo</span><span class="o">-</span><span class="n">i</span><span class="o">.</span><span class="n">nl</span>
+</pre></div>
+</div>
+<p>Finally, you provide a short description of the project. This will also
+be added to the Python package and the top-level README file:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="mi">5</span><span class="o">/</span><span class="mi">5</span><span class="p">]</span> <span class="n">description</span> <span class="p">(</span><span class="n">A</span> <span class="n">short</span> <span class="n">description</span> <span class="n">of</span> <span class="n">the</span> <span class="n">project</span><span class="p">):</span> <span class="n">Hubble</span> <span class="n">project</span>
+</pre></div>
+</div>
+</section>
+<section id="the-created-directory-structure">
+<h2>The created directory structure<a class="headerlink" href="#the-created-directory-structure" title="Link to this heading">#</a></h2>
+<p>The NWO cookiecutter creates the following directory structure:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>├── README.md          &lt;- The top-level README.md file for information about the project.
+├── data
+│   ├── external       &lt;- Data from third party sources.
+│   ├── intermediate   &lt;- Intermediate data that has been transformed.
+│   ├── processed      &lt;- The final, canonical data set.
+│   └── raw            &lt;- The original, immutable data dump.
+│
+├── references         &lt;- Related papers, manuals, and all other explanatory materials.
+│   ├── manuals        &lt;- Directory for manuals.
+│   ├── papers         &lt;- Directory for related papers.
+│   └── other          &lt;- Other explanatory materials.
+│
+├── reports            &lt;- Generated analysis as HTML, PDF, LaTeX, etc.
+│   ├── presentations  &lt;- Presentations given about the project.
+│   ├── meetings       &lt;- Updates presented in group meetings, etc.
+│   └── figures        &lt;- Generated graphics and figures to be used in reporting.
+│
+├── env.sh             &lt;- A bash file to contain all the environment variables
+│                         and software sources to run the project.
+│
+├── src                &lt;- Source code for use in this project (* Git).
+│   │
+│   ├── docs           &lt;- Documentation for the source code.
+│   │
+│   ├── notebooks      &lt;- Jupyter notebooks.
+│   │
+│   ├── &lt;repo_name&gt;    &lt;- Python module for project.
+│   │   │
+│   │   ├── __init__.py   &lt;- Make this directory a python module.
+│   │   ├── scripts       &lt;- Directory to add python scripts.
+│   │   └── functions.py  &lt;- Add your python functions here.
+│   │
+│   └── pyproject.toml &lt;- Python project definition file used to build a python package.
+│
+└── paper              &lt;- Directory to write your paper (* Git/Overleaf).
+</pre></div>
+</div>
+<section id="data">
+<h3>Data<a class="headerlink" href="#data" title="Link to this heading">#</a></h3>
+<p>Now that the directory structure is created, we can discuss the contents.
+In the data directory you can store your data. These data can be in various
+stages of analysis. There can be raw data from an instrument or data
+from an external source, from which you derive intermediate data and
+end results.</p>
+<p>It is usually a good idea to separate the original data (raw or external)
+from the processed data. You usually do not want to alter the raw or external
+files in any way, so saving them in separate directories avoids accidentally
+changing these files.</p>
+<section id="subdirectories">
+<h4>Subdirectories<a class="headerlink" href="#subdirectories" title="Link to this heading">#</a></h4>
+<p>The data directory contains the following subdirectories:</p>
+<ul class="simple">
+<li><p>external: To store external data,</p></li>
+<li><p>raw: To store raw data from the instrument,</p></li>
+<li><p>intermediate: To store intermediate data products while processing,</p></li>
+<li><p>processed: To store the end results of the processing.</p></li>
+</ul>
+</section>
+<section id="link-to-large-file-storage">
+<h4>Link to large file storage<a class="headerlink" href="#link-to-large-file-storage" title="Link to this heading">#</a></h4>
+<p>If your datasets are large, it is best to store them on a disk with high
+capacity. You can still include them in this directory structure by creating
+a symbolic link. It is best to replace the current directory. For example,
+the <code class="docutils literal notranslate"><span class="pre">external</span></code> directory needs to be removed before we can make a link to
+an existing directory elsewhere. Be careful with the <code class="docutils literal notranslate"><span class="pre">rm</span></code> command!</p>
+<p>First check whether the external directory is empty:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">user</span><span class="nd">@linux</span><span class="p">:</span><span class="o">~/</span><span class="n">Projects</span><span class="o">/</span><span class="n">hubble</span><span class="o">/</span><span class="n">data</span><span class="o">&gt;</span> <span class="n">ls</span> <span class="n">external</span><span class="o">/</span>
+</pre></div>
+</div>
+<p>If the directory does not contain anything that you want to keep, then remove it:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">user</span><span class="nd">@linux</span><span class="p">:</span><span class="o">~/</span><span class="n">Projects</span><span class="o">/</span><span class="n">hubble</span><span class="o">/</span><span class="n">data</span><span class="o">&gt;</span> <span class="n">rm</span> <span class="o">-</span><span class="n">rf</span> <span class="n">external</span><span class="o">/</span>
+</pre></div>
+</div>
+<p>If we have the external data stored in <code class="docutils literal notranslate"><span class="pre">/path/to/storage/external</span></code>, then
+we can create the new link with the command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">user</span><span class="nd">@linux</span><span class="p">:</span><span class="o">~/</span><span class="n">Projects</span><span class="o">/</span><span class="n">hubble</span><span class="o">/</span><span class="n">data</span><span class="o">&gt;</span> <span class="n">ln</span> <span class="o">-</span><span class="n">s</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">storage</span><span class="o">/</span><span class="n">external</span> <span class="n">external</span>
+</pre></div>
+</div>
+<p>The data will still be available at <code class="docutils literal notranslate"><span class="pre">data/external</span></code>, but the files will be
+physically stored in <code class="docutils literal notranslate"><span class="pre">/path/to/storage/external</span></code>.</p>
+</section>
+</section>
+<section id="the-env-sh-file">
+<h3>The env.sh file<a class="headerlink" href="#the-env-sh-file" title="Link to this heading">#</a></h3>
+<p>Since you probably use a number of external software packages in this
+project, it may be a good idea to use <code class="docutils literal notranslate"><span class="pre">env.sh</span></code> as a source file to
+set all the software packages and environment variables that you need.</p>
+<p>In the file, you can source software packages to make them available
+in your environment. In addition, you can set project specific variables.
+For example, you can set a variable containing the absolute path to
+your project directory. You can then read this variable in your Python
+programs and use it to find your files relative to this path. This
+way, you can move your directory to another system and all you need
+to change is the path contained in the environment variable.</p>
+<p>For an example, see <code class="docutils literal notranslate"><span class="pre">PROJECT_DATA_DIR</span></code> set in <code class="docutils literal notranslate"><span class="pre">env.sh</span></code>. In
+<code class="docutils literal notranslate"><span class="pre">src/&lt;repo_name&gt;/functions.py</span></code> you can find the <code class="docutils literal notranslate"><span class="pre">get_data_dir</span></code> function
+which reads and checks the path from <code class="docutils literal notranslate"><span class="pre">PROJECT_DATA_DIR</span></code>. This
+way, you can use the path throughout your package.</p>
+<p>Please make sure that your <code class="docutils literal notranslate"><span class="pre">env.sh</span></code> file does not end up in
+a git repository, or at least make sure that the environment
+does not contain sensitive information.</p>
+<div class="admonition-exercise admonition">
+<p class="admonition-title">EXERCISE</p>
+<p>Uncomment the <code class="docutils literal notranslate"><span class="pre">PROJECT_DIR</span></code> and <code class="docutils literal notranslate"><span class="pre">PROJECT_DATA_DIR</span></code> environment
+variables in <code class="docutils literal notranslate"><span class="pre">env.sh</span></code> and change the directory path to your hubble
+project location.</p>
+</div>
+<p>Once you have saved the <code class="docutils literal notranslate"><span class="pre">env.sh</span></code> file, you can load the variables into
+your environment using the source command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">base</span><span class="p">)</span> <span class="n">user</span><span class="nd">@terminal</span><span class="p">:</span><span class="o">~/</span><span class="n">Projects</span><span class="o">/</span><span class="n">hubble</span><span class="o">&gt;</span> <span class="n">source</span> <span class="n">env</span><span class="o">.</span><span class="n">sh</span>
+</pre></div>
+</div>
+</section>
+<section id="references">
+<h3>References<a class="headerlink" href="#references" title="Link to this heading">#</a></h3>
+<p>You can use this directory to save any explanatory materials related
+to your project. These can be papers, manuals, and other documents
+that are useful to have around.</p>
+</section>
+<section id="reports">
+<h3>Reports<a class="headerlink" href="#reports" title="Link to this heading">#</a></h3>
+<p>The reports directory can be used to store all kinds of (intermediate)
+reports about the project. From figures that you presented at group
+meetings to presentations given at conferences.</p>
+<p>Tip for the meeting directory: If you create a subdirectory for each
+meeting with the date in <code class="docutils literal notranslate"><span class="pre">YYYY-MM-DD</span></code> format (the ISO-8601 standard),
+they will be nicely ordered by time in your directory listing.</p>
+</section>
+<section id="source-directory-src">
+<h3>Source directory (src)<a class="headerlink" href="#source-directory-src" title="Link to this heading">#</a></h3>
+<p>In this directory, you can put your Python source code.
+It is usually very helpful to create functions or classes
+for operations that you use often.</p>
+<p>It is very useful to keep this directory under git version
+control. This will be discussed in the next section.</p>
+<p>The directory is set up in a way such that you can easily
+create a Python package. It contains the <code class="docutils literal notranslate"><span class="pre">docs</span></code> and
+<code class="docutils literal notranslate"><span class="pre">notebooks</span></code> directories to document the code and provide
+examples as jupyter notebooks.</p>
+<p>There is a lot to say about structuring a Python project.
+If you want to learn more about the dos and don’ts of
+structuring Python, you can read this part of the
+<a class="reference external" href="https://docs.python-guide.org/writing/structure/">Hitchhiker’s guide to Python</a>,
+for example.</p>
+<section id="docs">
+<h4>Docs<a class="headerlink" href="#docs" title="Link to this heading">#</a></h4>
+<p>You can use this directory to create source code documentation.
+A way to do that is to use the python <code class="docutils literal notranslate"><span class="pre">sphinx</span></code> package.</p>
+<p>If you are interested, then look at the <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/quickstart.html">Sphinx Quickstart
+guide</a>.</p>
+</section>
+<section id="notebooks">
+<h4>Notebooks<a class="headerlink" href="#notebooks" title="Link to this heading">#</a></h4>
+<p>In this directory, you can store jupyter notebooks that you use
+to explore the data and visualize it.</p>
+</section>
+<section id="pyproject-toml">
+<h4>Pyproject.toml<a class="headerlink" href="#pyproject-toml" title="Link to this heading">#</a></h4>
+<p>The <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code> file describes the properties of your python
+package, what packages it depends on and how it is installed. You
+can find more information about this file here:
+<a class="reference external" href="https://packaging.python.org/en/latest/guides/writing-pyproject-toml/">Write your own pyproject.toml</a>.</p>
+</section>
+</section>
+<section id="paper">
+<h3>Paper<a class="headerlink" href="#paper" title="Link to this heading">#</a></h3>
+<p>In the paper directory, you can write your (LaTeX) paper. Many people
+use Overleaf these days and it is possible to use git version control
+to sync your paper files with Overleaf.</p>
+<p>Please see the <a class="reference external" href="https://www.overleaf.com/learn/how-to/Git_integration">Git integration</a>
+manual of Overleaf to get your Overleaf project into this directory.</p>
+</section>
+</section>
+<section id="readme">
+<h2>README<a class="headerlink" href="#readme" title="Link to this heading">#</a></h2>
+<div class="admonition-exercise admonition">
+<p class="admonition-title">EXERCISE</p>
+<p>Rename the standard README.md file in the top directory and
+download the template README.md file from <a class="reference external" href="https://github.com/jdeplaa/open-data-template/blob/main/template/README.md?plain=1">this Github page</a>.
+This will become our README file for the reproduction package at the end.</p>
+</div>
+</section>
+<section id="file-formats">
+<h2>File formats<a class="headerlink" href="#file-formats" title="Link to this heading">#</a></h2>
+<p>When you store your data or text in files, it is very important that
+you do this in <a class="reference external" href="https://en.wikipedia.org/wiki/Open_file_format">open file formats</a>.
+There are many ways to encode data
+in files, and for the computer to read them, you usually need a special
+library or module. For the file format you choose, it is best that that
+format has publicly available read and write software. Large tables with numbers
+are usually most efficiently stored in binary files, like <a class="reference external" href="https://en.wikipedia.org/wiki/FITS">FITS</a>, or <a class="reference external" href="https://en.wikipedia.org/wiki/Hierarchical_Data_Format">HDF5</a>.
+Text that needs to be human readable, like READMEs or source code
+are stored in <a class="reference external" href="https://en.wikipedia.org/wiki/ASCII">ASCII format</a>.
+In all cases, make sure that the files you create are easy to read
+by others.</p>
+</section>
+<section id="naming-files">
+<h2>Naming files<a class="headerlink" href="#naming-files" title="Link to this heading">#</a></h2>
+<p>Next to a good directory structure, giving your files consistent names
+is also very helpful. Checkout the checklist below from <a class="reference external" href="https://book.the-turing-way.org/project-design/filenaming">The Turing way
+handbook</a>:</p>
+<ul class="simple">
+<li><p>Name your files consistently</p></li>
+<li><p>Keep it short but descriptive</p></li>
+<li><p>Avoid special characters or spaces to keep it machine-compatible</p></li>
+<li><p>Use capitals, dashes, or underscores to keep it human-readable</p></li>
+<li><p>Use consistent date formatting, for example ISO 8601: YYYY-MM-DD to maintain default order</p></li>
+<li><p>Include a version number when applicable</p></li>
+<li><p>Share/establish a naming convention when working with collaborators</p></li>
+<li><p>Record a naming convention in your data management plan (if you have one)</p></li>
+</ul>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="directories.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Project directory</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="git.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Git version control</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-general-projects-directory">Creating a general projects directory</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-project-directory-using-cookiecutter">Creating a project directory using cookiecutter</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-created-directory-structure">The created directory structure</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data">Data</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#subdirectories">Subdirectories</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#link-to-large-file-storage">Link to large file storage</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-env-sh-file">The env.sh file</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reports">Reports</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#source-directory-src">Source directory (src)</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#docs">Docs</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#notebooks">Notebooks</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pyproject-toml">Pyproject.toml</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#paper">Paper</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#readme">README</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#file-formats">File formats</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#naming-files">Naming files</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Jelle de Plaa
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025, CC-BY License, NWO-I, The Netherlands.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

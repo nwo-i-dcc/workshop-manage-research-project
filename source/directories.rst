@@ -43,7 +43,7 @@ A mix of the two is also possible.
 
 What are the tools that can help you to work remotely? And what are their advantages and disadvantages?
 
-- **Owncloud**: Owncloud is a cloud directory similar to Dropbox or Google Drive.
+- **Owncloud/SURF drive**: Owncloud and SURF drive are a cloud service similar to Dropbox or Google Drive.
   You can download an app that synchronises your local owncloud directory with the one on the
   server. This way you can work locally in a folder, but have the same files available on multiple machines. Take care,
   however, that when you delete something, it is also deleted automatically on your other devices.
@@ -66,26 +66,29 @@ files in a place on the institute network where it is accessible from all comput
 helpful if your software and/or scripts are also available on the network. Please ask your colleague or 
 data steward which disk is best for you.
 
-
 Storage space
 ~~~~~~~~~~~~~
 
 The local harddrives of desktops and laptops usually have space for >100 GB of data and sometimes even a couple of TB.
-The shared storage on the network has >10 TB free. For most applications, this is enough. If you think that you need
-more, then please ask your local datasteward or ICT.
+Many institutes have large shared storage on the network available. For most applications, this is enough. If you think 
+that you need more, then please ask your local data steward or ICT support contact.
 
-Please do not store large datasets in your home directory. The home directories are limited in space because they are
-backed-up every day. We will show later how you can store your project directory in the home directory and still store
-large datafiles in a suitable place. To do this, you can create a symbolic link. This will be explained in the next section.
+Please ask your data steward or your ICT department as well about the backup policy if you want to use a network disk. 
+You want your data to be safe, but on the other hand, making a backup of large datasets is costly and time consuming. 
+The ICT department may have preferences where you store large datasets, so please follow them. There is a trick to 
+have your data in the project directory tree and on another disk at the same time. To do this, you can create a symbolic 
+link. This will be explained in the next section.
 
 Conclusion
 ~~~~~~~~~~
 
-- The best place for your project directory is your home directory. There are automatic backups and this disk is
-  accessible from all computers on the network. Large datasets, however, should be stored somewhere else.
+- The best place for your project directory is your home directory. However, depending on the setup at your institute
+  it may not be the best place to store large datasets. Please follow the instructions of your local ICT department.
 - If you need to have your project directory available on your laptop, then you can consider creating this directory
-  on owncloud. This way you can share your project files between devices and benefit from a backup. Note that your
-  owncloud folder is limited in size and not suitable for very large datasets.
+  on an owncloud or SURF drive folder. This way you can share your project files between devices and benefit from a 
+  backup. Note that your owncloud or SURF drive folder is limited in size and may not be suitable for very large datasets. 
+  Also, keep in mind that if you delete something, the automatic synchronisation will also delete it on all your other 
+  copies. 
 
 
 

@@ -108,7 +108,7 @@ here.
 Fitting the data
 ----------------
 
-Hubble's law is a quite simple mathematical relation. The velocity
+Hubble's law is a linear relation. The velocity
 (:math:`v`) is equal to the Hubble constant (:math:`H_0`) times the
 distance (:math:`D`), leading to the equation:
 
@@ -118,7 +118,7 @@ Since we have velocity and distance data of a number of galaxies, we
 can determine the Hubble constant (:math:`H_0`). To do this, we need
 to fit the data points with a straight line through the origin.
 
-We have prepared a simple script that fits the data with a straight line
+We have prepared a small script that fits the data with a straight line
 and plots the result. You can download :download:`hubblefit.py </_static/hubblefit.py>`
 here.
 

@@ -62,22 +62,54 @@ What do you need before you start?
 Computer/laptop with Python
 '''''''''''''''''''''''''''
 
-You will need a laptop with Python installed, including a couple of Python packages:
+You will need a laptop with Python installed. Please see below for Python install options for
+various operating systems:
+
+Linux
+~~~~~
+
+Usually has python installed by default. The pip package manager is usually also there. If you
+cannot find it, then see if you can install python and pip from your linux distribution's package
+manager. Otherwise, you can also consider installing `Miniforge <https://conda-forge.org/download/>`_.
+
+Apple Mac
+~~~~~~~~~
+
+The default Python installation on Mac is not complete, so it is best to install Python separately.
+There are multiple options, and it is OK if you have already installed one of those.
+If you do not have a Python installation, we recommend `Miniforge <https://conda-forge.org/download/>`_.
+
+Windows
+~~~~~~~
+
+Python is not by default installed on Windows. If you do not have Python installed yet, then
+we recommend `Miniforge <https://conda-forge.org/download/>`_. After running the installer, there
+will be a new program called Miniforge prompt in the start menu, which provides you with an
+interface similar to the ones on Linux and Mac.
+
+Python packages
+~~~~~~~~~~~~~~~
+
+Once you have Python on your laptop, then please make sure that you have
+these Python packages installed:
 
 - astropy
 - astroquery
-- build
+- build (or python-build)
 - matplotlib
 - cookiecutter
+- git (on windows)
 
 You can either use the native Python installation of your operating system and install these packages
 with ``pip``::
 
     pip install astropy astroquery build matplotlib cookiecutter
     
-or install these packages in anaconda::
+or install these packages in anaconda (Windows)::
 
-    conda install astropy astroquery build matplotlib cookiecutter
+    conda install astropy astroquery python-build matplotlib cookiecutter git
+
+or equivalently, you can use the command ``mamba install <packages>``.
 
 LaTeX (optional)
 ~~~~~~~~~~~~~~~~

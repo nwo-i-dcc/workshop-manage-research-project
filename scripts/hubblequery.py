@@ -5,7 +5,7 @@ from astropy import constants as const
 from astropy.table import QTable
 
 
-def main():
+def hubblequery():
     """This script retrieves the latest velocities and distances for the objects that
     Edwin Hubble used to find the famous Hubble universe expansion law in 1929."""
 
@@ -42,4 +42,4 @@ def main():
     newtable.write('hubble_data.fits', format='fits')
 
 if __name__ == "__main__":
-    main()
+    hubblequery()

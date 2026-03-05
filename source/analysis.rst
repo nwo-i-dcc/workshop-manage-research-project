@@ -64,9 +64,6 @@ script or copy/paste it from below::
         # Convert redshifts to velocities and convert MAIN_ID to strings
         c = const.c.to('km/s')
         for i in range(hubble_data['rvz_radvel'].size):
-            # If the datatype is redshift (z), then multiply with c to obtain velocity in km/s
-            if hubble_data['rvz_type'][i] == 'z':
-                hubble_data['rvz_radvel'][i] = hubble_data['rvz_radvel'][i] * c.value
             # Convert the column with source IDs from object to strings (otherwise conversion to FITS fails)
             hubble_data['main_id'][i] = str(hubble_data['main_id'][i])
     

@@ -201,7 +201,7 @@ and ``project_data_dir`` from the environment::
     # We define the environment variable PROJECT_DATA_DIR in env.sh to point to
     # the data/external directory.
     p = Paths()
-    hubble_file = os.path.join(paths.project_data_dir, 'raw/hubble_data.fits')
+    hubble_file = os.path.join(p.project_data_dir, 'raw/hubble_data.fits')
 
 The hubble data file can now be read using this line::
 
@@ -230,7 +230,7 @@ At the end of the file, we create a new function that looks like this::
     def hubblefit_arguments():
         """Obtain command line arguments."""     
         parser = argparse.ArgumentParser(description="Hubble expansion fit.")
-        parser.add_argument('datafile', help='Input FITS file containing distances and velocities for galaxies', type=str, required=True)
+        parser.add_argument('datafile', help='Input FITS file containing distances and velocities for galaxies', type=str)
         return parser
 
 
@@ -329,10 +329,16 @@ script depends on, like astropy and astroquery. You can add these dependencies t
 You install your python module in your python environment with the following commands 
 (in the directory where ``pyproject.toml`` resides)::
 
-    python -m build && pip install dist/hubble.tar.gz
+    python -m build && pip install dist/hubble-0.1.tar.gz
 
 the hubblefit executable will always be available in your environment. It will be installed
 in the path.
+
+The generated hubble-0.1.tar.gz is now a package that you can install on
+different machines as well. When you carefully define the dependencies
+and their version numbers, you can even make it available to `pip` through
+the pypi repository. For more information see the `Packaging Python Projects
+<https://packaging.python.org/en/latest/tutorials/packaging-projects/>`_ page.
 
 Git
 '''

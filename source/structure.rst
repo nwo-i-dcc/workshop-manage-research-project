@@ -87,9 +87,9 @@ The NWO cookiecutter creates the following directory structure::
     │   ├── meetings       <- Updates presented in group meetings, etc.
     │   └── figures        <- Generated graphics and figures to be used in reporting.
     │
-    ├── .env               <- A file to contain all the environment variables
-    │                         and software sources to run the project.
-    ├── Load-Env.ps1       <- A script to load the environment in Windows Powershell.
+    ├── env.sh             <- A file to contain all the environment variables
+    │                         and software sources to run the project (Linux/Mac).
+    ├── Env.ps1            <- A script to load the environment in Windows Powershell.
     │
     ├── src                <- Source code for use in this project (* Git).
     │   │
@@ -157,11 +157,11 @@ we can create the new link with the command::
 The data will still be available at ``data/external``, but the files will be
 physically stored in ``/path/to/storage/external``.
 
-The .env file
-~~~~~~~~~~~~~
+The env.sh and Env.ps1 files
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Since you probably use a number of external software packages in this
-project, it may be a good idea to use ``.env`` as a source file to
+project, it may be a good idea to use an input file to
 set all the software packages and environment variables that you need.
 
 In the file, you can source software packages to make them available
@@ -172,12 +172,12 @@ programs and use it to find your files relative to this path. This
 way, you can move your directory to another system and all you need
 to change is the path contained in the environment variable.
 
-For an example, see ``PROJECT_DATA_DIR`` set in ``.env``. In
+For an example, see ``PROJECT_DATA_DIR`` set in ``env.sh``. In
 ``src/<repo_name>/functions.py`` you can find the ``get_data_dir`` function
 which reads and checks the path from ``PROJECT_DATA_DIR``. This
 way, you can use the path throughout your package.
 
-Please make sure that your ``.env`` file does not end up in
+Please make sure that your ``env.sh`` and ``Env.ps1`` files do not end up in
 a git repository, or at least make sure that the environment
 does not contain sensitive information.
 
@@ -190,15 +190,11 @@ does not contain sensitive information.
 Once you have saved the ``.env`` file, you can load the variables into
 your environment using the source command (on Linux and Mac)::
 
-    (base) user@terminal:~/Projects/hubble> source .env
+    (base) user@terminal:~/Projects/hubble> source env.sh
 
-In the Windows Powershell you can load the environment variables using
-the ``dotenv`` module. You need to install this first (one time)::
+In the Windows Powershell you can load the environment variables by giving
+the command ``. Env.ps1`` in the hubble directory.
 
-    > Install-Module dotenv -Scope CurrentUser
-
-Then run the load script ``.\Load-Env.ps1`` to load the environment variables
-into the session.
 
 References
 ~~~~~~~~~~
